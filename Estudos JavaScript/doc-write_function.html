@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script> // o Script pode ser feito aqui ou em outro arquivo usando o "src" para linkar.
+
+        //comandos começando com "window" vão atuar no externo, os começados com "document" vão atuar no próprio site.
+
+        var nome = window.prompt('qual é o seu nome?')// var significa variavel. variavel "nome" recebe o que o usuario digitar no window.prompt
+        
+        document.write('olá <strong>' + nome + '</strong>')// '+' = cocatenação. o conteúdo colocado no dpcument write será "passado" por html, então pode usar tag.
+        document.write(` <br> bem vindo ao meu site ${nome}`) // usando crase `` ao invés de aspas'' se pode usar o ${} para inserir variaveis sem o + da cocatenação
+        document.write("<br>seu nome em maiúsculo fica: " + nome.toUpperCase())//toUpperCase tranqforma em maiúsculo
+        document.write("<br>seu nome em minúsculo fica: " + nome.toLowerCase())// minúsculo
+        document.write("<br>seu nome tem " + nome.length + " letras") //lenth conta a quantidade de carácteres.
+
+
+        function numero(){//escrevendo uma função que será realizada ao apertar o botão
+            var num = parseFloat(window.prompt("digite um numero"))  //aqui esta ocorrendo o seguinte:
+            // var num = window.prompt("digite um numero")  -- porem o window.prompt retorna uma string, então converstemos com o parseFloat
+            // num = parseFloat(num)
+
+            document.write('<br> numero com duas casas decimais: ' + num.toFixed(2)) //toFixed fixa uma quantia de casas decimais
+            document.write('<br> numero com virgula: ' + num.toFixed(2).replace('.',','))
+        }//fim da função
+
+    </script><!--fim do Script-->
+
+<br>
+<button onclick="numero()"> numero </button> <!--botão que chama função feita no JS pelo onclick-->
+
+</body>
+</html>
