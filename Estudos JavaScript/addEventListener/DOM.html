@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body{
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            display: flex;
+            font-size: 30px;
+            background-color: rgb(33, 195, 33);
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">interaja...</div>
+
+    <script>
+
+        //addEventListener funcioina como o "onClick", porem feito no JS ao invés de no html
+
+        var area = document.getElementById("div1")
+        area.addEventListener("click", clicar) //na ação "click" ele chama a função "clicar"
+        area.addEventListener("mouseenter", entrar)
+        area.addEventListener("mouseout", sair)
+
+        function clicar(){
+            area.innerHTML = "<strong> clicou! </strong>"
+            area.style.backgroundColor = "red"
+        }
+
+        function entrar(){
+            area.innerHTML = "<strong> entrou! </strong>"
+        }
+
+        function sair(){
+            area.innerHTML = "<strong> saiu! </strong>"
+            area.style.backgroundColor = "rgb(33, 195, 33)"
+        }
+    </script>
+</body>
+</html>

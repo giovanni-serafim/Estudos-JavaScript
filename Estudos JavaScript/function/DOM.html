@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            margin: 0;
+            justify-content: center;
+            align-items: center;
+        }
+        header{
+            background-color: rgb(14, 14, 214);
+            text-align: center;
+        }
+        h1{
+            
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        main{
+            background-image: url(fundo_calculadora.jpeg);
+            margin: 20px;
+            height: 600px;
+            width: 600px;
+            border: 3px solid black;
+            border-radius: 6px;
+        }
+
+        div{
+            font-size: 30px;
+            margin: 50px;
+        }
+        button{
+            height: 60px;
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <main>
+
+        <h1 style="text-align: center; font-size: 40px;">soma</h1>
+        <br> 
+
+        <div id="itemA">
+            <br><label for="a"><strong>valor:</strong></label>
+            <input type="number" name="a" id="a"> <br>
+        </div>
+        <div id="itemB">
+            <label for="b"><strong>valor:</strong> </label>
+            <input type="number" name="b" id="b"><br>
+        </div>
+        <div id="botao"><button onclick="somar()">somar</button> <br></div>
+        <label for="c" style="font-size: 20px;">resultado:</label>
+        <p id="c" name="c" style="font-size: 30px; display: inline;"></p>
+    </main>
+
+    <script>
+
+        function somar(){
+        var a = Number(document.getElementById("a").value)//precisa colocar o value pra ele pegar o valor ao invés do espaço
+        var b = Number(document.getElementById("b").value)
+        
+        document.getElementById("c").innerHTML = (a + b)
+        }
+    </script>
+</body>
+</html>
