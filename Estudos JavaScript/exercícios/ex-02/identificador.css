@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(246, 131, 37);
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+
+section{
+    background-color: white;
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+footer{
+    color: white;
+    text-align: center;
+}
+
+div{
+    
+}

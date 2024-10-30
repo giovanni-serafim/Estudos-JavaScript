@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="identificador.css">
+</head>
+<body>
+    <header>
+        <h1>identificador</h1>
+    </header>
+
+    <section>
+        <p>
+            <label for="ano">ano de nascimento: </label>
+            <input type="number" name="ano">
+        </p>
+        <br>
+        <p>
+            <label for="sexo">Sexo: </label>
+            <input type="radio" name="sexo" id="masc" checked>
+            <label for="sexo">masculino </label>
+            <input type="radio" name="sexo" id="fem">
+            <label for="sexo">feminino </label>
+
+        </p>
+
+        <p><button onclick="verificar()">verificar</button></p>
+        
+        <p>
+            <div>
+                aguardando informações...
+            </div>
+        </p>
+        
+    </section>
+
+    <footer>
+        Giovanni Serafim
+    </footer>
+
+    <script src="identificador.js"></script>
+</body>
+</html>
