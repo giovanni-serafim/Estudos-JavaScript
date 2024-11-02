@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="exemplo">
+        <h1>será excluído por removeChild</h1>
+    </div>
+
+    <script>
+        //adicionando o <p>
+        var conteudo = document.createElement("p")
+        conteudo.innerHTML = "esse é um conteúdo inserido por appendChild"
+        document.getElementById('exemplo').appendChild(conteudo)
+
+        //adicionando a <img>
+        var img = document.createElement('img')
+        img.src = "menino-velho.jpg"
+        document.getElementById('exemplo').appendChild(img)
+
+        //removendo o h1 que estava na div
+        var h1 = document.getElementById("exemplo").getElementsByTagName("h1")[0]
+        document.getElementById('exemplo').removeChild(h1)
+    </script>
+</body>
+</html>

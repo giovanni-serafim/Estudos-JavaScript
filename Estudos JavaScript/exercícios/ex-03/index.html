@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex 03</title>
+    <style>
+        body{
+            background-color: rgb(69, 179, 160);
+        }
+
+        header{
+            color: white;
+            text-align: center;
+        }
+
+        section{
+
+            background-color: white;
+            width: 500px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+
+        }
+
+        footer{
+            color: white;
+            text-align: center;
+        }
+
+        div{
+            padding: 15px;
+        }
+
+        select{
+            width: 80%;
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Análise de lista</h1>
+    </header>
+
+    <section>
+        <div>
+            <label for="num">insira um numero: </label>
+            <input type="number" name="num">
+            <button onclick="inserir()">inserir</button>
+        </div>
+
+        <div>
+            <select name="array" id="list">
+                
+            </select>
+            <button onclick="resultado()">finalizar</button>
+        </div>
+
+        <div id="resultado">
+
+        </div>
+    </section>
+
+    <footer>
+        <p>Giovanni Serafim</p>
+    </footer>
+
+
+    <script src="array.js"></script>
+</body>
+</html>
