@@ -4,9 +4,6 @@ var array = []
 
 function inserir(){
 
-
-
-
 //pega o numero
 var num = document.getElementsByName("num")[0].value
 
@@ -37,6 +34,7 @@ lista.add(option)
 array.push(num)
 
 document.getElementsByName("num")[0].value = ""
+document.getElementsByName("num")[0].focus()
 }
 }// fim do inserir()
 
