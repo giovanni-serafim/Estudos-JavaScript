@@ -4,6 +4,7 @@ function adicionar(){
 
     var novaDiv = div.cloneNode(true)
 
-    
+    document.querySelector("section").appendChild(novaDiv);
+
 
 }
